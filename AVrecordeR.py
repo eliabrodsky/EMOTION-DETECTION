@@ -69,7 +69,7 @@ class VideoRecorder:
     def generate(self, gen_frame):
         print("in generate")
         global lock
-        cv2.imshow('Frame Deepface 2', gen_frame)
+        #cv2.imshow('Frame Deepface 2', gen_frame)
         print("in generate")
         # loop over frames from the output stream
         while True:
@@ -123,7 +123,7 @@ class VideoRecorder:
 
                 try:
                     # print("try ret")
-                    self.generate(video_frame)
+                    #self.generate(video_frame)
                     self.deepFace(video_frame)
 
                 except:
