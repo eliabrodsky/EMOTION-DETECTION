@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+    </head>
+    <body>
+        <h1>Home Page!</h1>
+        <p>Hi {{content}}!</p>
+        <p>Are you {{r}} years old?</p>
+
+        <!-- writing python code --> 
+        {% for i in range(10) %}
+            {% if i%2 == 1 %}
+                <p>{{i}}</p>
+            {% endif %}
+        {% endfor %}
+
+        <p>{{a_list}} are my friends.</p>
+    </body>
+
+</html>
